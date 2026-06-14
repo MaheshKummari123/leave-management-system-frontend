@@ -1,0 +1,193 @@
+.aup-back-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    background:#fff;
+    color:#334155;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.aup-back-btn:hover{
+    background:#f8fafc;
+    border-color:#cbd5e1;
+    color:#0f172a;
+}
+
+/* header css */
+.aup-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:24px;
+}
+
+.aup-breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.aup-breadcrumb a{
+    color:#6366f1;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.aup-breadcrumb span{
+    color:#94a3b8;
+}
+
+.aup-title{
+    font-size:30px;
+    font-weight:800;
+    color:#0f172a;
+    margin:0;
+}
+
+.aup-subtitle{
+    margin-top:4px;
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ==========================
+   FORM CARD
+========================== */
+
+.aup-form-card{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:24px;
+    padding:32px;
+    box-shadow:
+        0 1px 2px rgba(0,0,0,.04),
+        0 10px 30px rgba(15,23,42,.05);
+}
+
+/* ==========================
+   FORM GRID
+========================== */
+
+.aup-form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* ==========================
+   FORM GROUP
+========================== */
+
+.aup-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.aup-group-full{
+    grid-column:1/-1;
+}
+
+/* ==========================
+   LABELS
+========================== */
+
+.aup-label{
+    font-size:13px;
+    font-weight:700;
+    color:#334155;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.aup-input,
+.aup-select{
+    height:48px;
+    border:1.5px solid #e2e8f0;
+    border-radius:12px;
+    padding:0 14px;
+    font-size:14px;
+    color:#0f172a;
+    background:#fff;
+    transition:.2s;
+    outline:none;
+}
+
+.aup-input:focus,
+.aup-select:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 0 4px rgba(99,102,241,.1);
+}
+
+/* ==========================
+   SECTION TITLE
+========================== */
+
+.aup-section-title{
+    font-size:16px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:16px;
+}
+
+.aup-divider{
+    margin:28px 0;
+    border:none;
+    border-top:1px solid #e2e8f0;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.aup-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-top:32px;
+}
+
+.aup-cancel-btn{
+    padding:12px 18px;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    background:#fff;
+    color:#334155;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.aup-cancel-btn:hover{
+    background:#f8fafc;
+}
+
+.aup-submit-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.aup-submit-btn:hover{
+    transform:translateY(-1px);
+    box-shadow:
+        0 10px 25px rgba(79,70,229,.25);
+}

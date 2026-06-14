@@ -1,0 +1,285 @@
+/* ==========================
+   PAGE
+========================== */
+
+body {
+    background: #f8fafc;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow: visible !important;
+    
+}
+
+.hero-card {
+    background: linear-gradient(135deg, #fffef8, #fff8dc);
+    border-radius: 24px;
+    padding: 40px 50px 80px 50px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: auto !important;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid !important;
+    grid-template-columns: 55% 42% !important;
+    gap: 40px;
+    align-items: center;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.hero-left {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto !important;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: #fff3cd;
+    color: #856404;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+.hero-left h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 14px;
+}
+
+.hero-left p {
+    font-size: 1rem;
+    color: #64748b;
+    max-width: 460px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.hero-btn {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 10px;
+    background: #facc15;
+    color: black;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.hero-btn:hover {
+    background: #eab308;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.hero-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+/* ==========================
+   COUNT CARDS
+========================== */
+
+.card {
+    border: none !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================
+   RECENT REQUESTS
+========================== */
+
+.recent-section {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.recent-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: #0f172a;
+    border: none;
+    padding: 18px;
+}
+
+.table tbody td {
+    padding: 18px;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr:hover {
+    background: #fafafa;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* ==========================
+   STATUS BADGES
+========================== */
+
+.badge {
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px) {
+    .hero-card {
+        padding: 30px 25px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-right {
+        justify-content: center;
+        height: auto !important;
+    }
+
+    .hero-left p {
+        max-width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-img {
+        max-width: 360px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-card {
+        padding: 20px;
+    }
+
+    .recent-section {
+        padding: 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 180px;
+    }
+}
+.pill-pending {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.table-header-h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    word-break: break-word;
+}
+.lq-leave-type {
+    font-weight: 700;
+    font-size: 13.5px;
+    color: #0f172a;
+    margin-bottom: 2px;
+}

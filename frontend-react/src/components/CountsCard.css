@@ -1,0 +1,55 @@
+.stats-card{
+    background:#fff;
+    border-radius:20px;
+    padding:24px;
+    min-height:150px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.06);
+    border:1px solid #eef2f7;
+    width: 300px;
+}
+
+.stats-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.stats-header h4{
+    font-size:18px;
+    font-weight:500;
+    color:#64748b;
+    margin:0;
+}
+
+.stats-icon{
+    width:35px;
+    height:35px;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+.stats-body{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:25px;
+}
+
+.stats-body h2{
+    font-size:34px;
+    font-weight:700;
+    color:#1e293b;
+    margin:0;
+}
+
+.growth-badge{
+    background:#dcfce7;
+    color:#16a34a;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:16px;
+    font-weight:600;
+}
