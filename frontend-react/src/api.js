@@ -1,5 +1,5 @@
 import axios from 'axios';
-const api = 'learnflow.railway.internal';
+const api = 'https://learnflow.up.railway.app';
 
 
 
