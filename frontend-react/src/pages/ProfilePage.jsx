@@ -138,11 +138,7 @@ function ProfilePage() {
                         <div className="pp-avatar-wrap">
                             {profileImage ? (
                                 <img
-                                    src={
-                                        profileImage.startsWith("blob:")
-                                            ? profileImage
-                                            : {profileImage}
-                                    }
+                                    src={profileImage}
                                     alt="Profile"
                                     className="pp-avatar-img"
                                 />
