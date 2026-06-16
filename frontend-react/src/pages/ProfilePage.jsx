@@ -141,7 +141,7 @@ function ProfilePage() {
                                     src={
                                         profileImage.startsWith("blob:")
                                             ? profileImage
-                                            : `http://localhost:8080/${profileImage}`
+                                            : {profileImage}
                                     }
                                     alt="Profile"
                                     className="pp-avatar-img"

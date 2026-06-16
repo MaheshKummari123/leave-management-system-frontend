@@ -256,7 +256,7 @@ function ViewLeaves() {
                                                 <div className="lq-student-cell">
                                                     <div className="lq-avatar">
                                                         {leave.user.profileImage
-                                                            ? <img src={`http://localhost:8080/${leave.user.profileImage}`} alt="" />
+                                                            ? <img src={leave.user.profileImage} alt="" />
                                                             : getInitials(leave.user.name)
                                                         }
                                                     </div>

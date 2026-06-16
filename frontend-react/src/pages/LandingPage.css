@@ -1636,9 +1636,6 @@ a {
     border-top: 1px solid var(--border);
   }
 
-  .navbar__actions {
-    display: none;
-  }
 
   .navbar__burger {
     display: flex;

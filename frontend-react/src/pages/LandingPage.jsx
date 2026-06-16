@@ -1028,9 +1028,6 @@ function Auth() {
                   <button type="button" className={`role-toggle__btn ${formData.role === 'FACULTY' ? 'role-toggle__btn--active' : ''}`} onClick={() => setFormData({ ...formData, role: 'FACULTY' })}>
                     Faculty
                   </button>
-                  <button type="button" className={`role-toggle__btn ${formData.role === 'ADMIN' ? 'role-toggle__btn--active' : ''}`} onClick={() => setFormData({ ...formData, role: 'ADMIN' })}>
-                    Admin
-                  </button>
                 </div>
               </div>
 
@@ -1082,9 +1079,9 @@ function Auth() {
                 </>
               )}
 
-              {(formData.role === 'FACULTY' || formData.role === 'ADMIN') && (
+              {formData.role === 'FACULTY' && (
                 <>
-                  <div className="form-section-title">{formData.role === 'FACULTY' ? 'Faculty' : 'Admin'} details</div>
+                  <div className="form-section-title">Faculty details</div>
                   <div className="form-row">
                     <label className="field">
                       <span className="field__label">Employee ID</span>

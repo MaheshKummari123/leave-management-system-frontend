@@ -1,10 +1,8 @@
 import { Route,Routes } from 'react-router-dom'
 import './App.css'
-import LoginPage from './pages/LoginPage'
 import StudentPage from './pages/StudentPage'
 import ApplyLeave from './pages/ApplyLeave'
 import ViewLeaves from './pages/ViewLeaves'
-import RegisterPage from './pages/RegisterPage'
 import FacultyPage from './pages/FacultyPage'
 import AdminPage from './pages/AdminPage'
 import ProfilePage from './pages/ProfilePage'
@@ -26,11 +24,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/login-page" element={<LoginPage />} />
       <Route path="/student" element={<StudentPage />} />
       <Route path="/student/apply-leave" element={ <ApplyLeave /> } />
       <Route path="/student/myleaves" element={ <ViewLeaves /> } />
-      <Route path="/register" element={ <RegisterPage /> } />
       <Route path="/faculty" element={ <FacultyPage /> } />
       <Route path='/admin' element={ <AdminPage />} />
       <Route path='/profile' element={ <ProfilePage /> } />

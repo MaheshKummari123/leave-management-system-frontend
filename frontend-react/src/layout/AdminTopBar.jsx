@@ -25,6 +25,9 @@ function AdminTopBar({ onToggleSidebar }) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
+                {/* Mobile brand */}
+                <span className="topbar-brand">LeaveFlow</span>
+
                 {/* Right Side Actions */}
                 <div className="navbar-content">
                     <ul className="navbar-nav">

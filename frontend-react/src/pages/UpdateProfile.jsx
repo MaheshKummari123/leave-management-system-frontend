@@ -252,7 +252,7 @@ function UpdateProfile() {
                                 preview
                                     ? preview
                                     : profileImage
-                                        ? `http://localhost:8080/${profileImage}`
+                                        ? profileImage  // now a full Cloudinary URL like https://res.cloudinary.com/...
                                         : "/male-profile-img.png"
                             }
                             alt="Profile"

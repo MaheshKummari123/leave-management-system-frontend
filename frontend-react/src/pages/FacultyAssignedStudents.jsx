@@ -196,7 +196,7 @@ function FacultyAssignedStudents() {
                                     <img
                                         src={
                                             student.profileImage
-                                                ? `http://localhost:8080/${student.profileImage}`
+                                                ? student.profileImage
                                                 : "/male-profile-img.png"
                                         }
                                         alt=""
@@ -272,7 +272,7 @@ function FacultyAssignedStudents() {
                                 <img
                                     src={
                                         profile.profileImage
-                                            ? `http://localhost:8080/${profile.profileImage}`
+                                            ? profile.profileImage
                                             : "/male-profile-img.png"
                                     }
                                     alt=""

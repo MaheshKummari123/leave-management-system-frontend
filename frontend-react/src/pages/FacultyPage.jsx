@@ -237,7 +237,7 @@ function FacultyPage() {
             </section>
 
             {count.pending > 0 && (
-                <section className="container fp-section">
+                <section className="container fp-section mb-4">
                     <div className="fp-notifications">
 
                         <div className="fp-notif fp-notif--warn">
@@ -361,7 +361,7 @@ function FacultyPage() {
                                                             <img
                                                                 src={
                                                                     leave.user?.profileImage
-                                                                        ? `http://localhost:8080/${leave.user.profileImage}`
+                                                                        ? leave.user.profileImage
                                                                         : "/male-profile-img.png"
                                                                 }
                                                                 alt={leave.user?.name}
@@ -486,7 +486,7 @@ function FacultyPage() {
                             <img
                                 src={
                                     detailLeave.user?.profileImage
-                                        ? `http://localhost:8080/${detailLeave.user.profileImage}`
+                                        ? detailLeave.user.profileImage
                                         : "/male-profile-img.png"
                                 }
                                 alt={detailLeave.user?.name}

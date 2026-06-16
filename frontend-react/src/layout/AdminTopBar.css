@@ -2,13 +2,19 @@
     position: fixed;
     top: 0;
     left: 260px;
-    width: calc(100% - 260px);
+    right: 0;
     height: 64px;
     background: #fff;
     border-bottom: 1px solid #e5e7eb;
     z-index: 1000;
     display: flex;
     align-items: center;
+    padding: 0 1rem;
+}
+
+.topbar.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .container-fluid{
@@ -16,24 +22,40 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
 .navbar-content{
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin:0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
 }
+
+.navbar-nav .nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler,
+.admin-profile-link,
+.logout-btn{
+    margin: 0;
+    line-height: 1;
+}
+
 
 .admin-profile-link{
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 14px;
+    padding: 14px 10px;
     border-radius: 12px;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -62,19 +84,17 @@
     color: #4F47E5;
 }
 
-
-
 /* Hamburger */
 .navbar-toggler{
     display: none;
     flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     background: #fff;
     width: 48px;
     height: 48px;
-    align-items: center;
-    justify-content: center;
     z-index: 1200;
 }
 
@@ -82,7 +102,26 @@
     box-shadow: none;
 }
 
-/*Logout btn */
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Mobile brand */
+.topbar-brand{
+    display: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4F47E5;
+    line-height: 1;
+}
+
+/* Logout btn */
 .logout-btn{
     display: flex;
     align-items: center;
@@ -112,6 +151,11 @@
     font-size: 15px;
 }
 
+.admin-content{
+    margin-left: 260px;
+    padding-top: 64px;
+}
+
 /* ==========================
    MOBILE
 ========================== */
@@ -120,9 +164,15 @@
 
     .topbar{
         left: 0;
+        right: 0;
         width: 100%;
         padding: 0 14px;
         z-index: 1150;
+    }
+
+    .container-fluid{
+        justify-content: flex-start;
+        gap: 12px;
     }
 
     .navbar-toggler{
@@ -130,9 +180,15 @@
         order: 0;
     }
 
+    .topbar-brand{
+        display: block !important;
+        order: 1;
+        flex: 1;
+    }
+
     .navbar-content{
         margin-left: 0;
-        order: 1;
+        order: 2;
     }
 
     .navbar-nav{
@@ -173,6 +229,7 @@
     .logout-btn svg{
         font-size: 18px;
     }
+
     .logout-text{
         display: none;
     }
@@ -184,5 +241,9 @@
     .admin-profile-link svg,
     .logout-btn svg{
         font-size: 18px;
+    }
+
+    .admin-content {
+        margin-left: 0;
     }
 }
